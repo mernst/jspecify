@@ -5,3 +5,7 @@ analysis checks.
 
 This is not an officially supported Google product. This project is a playground in which developers can make progress;
 we do not expect to actually release in this form.
+
+## Copyright
+
+Copyright &copy; 2018-present The Code Analysis Annotations Authors.
