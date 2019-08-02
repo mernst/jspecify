@@ -14,26 +14,17 @@
  * limitations under the License.
  */
 
-package codeanalysis.annotations;
+package codeanalysis.experimental.annotations;
 
-import static java.lang.annotation.ElementType.CONSTRUCTOR;
-import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.ElementType.PACKAGE;
 import static java.lang.annotation.ElementType.TYPE;
-import static java.lang.annotation.RetentionPolicy.RUNTIME;
+import static java.lang.annotation.RetentionPolicy.CLASS;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
-/**
- * Indicates that the return value of the annotated method must be checked. An error is triggered
- * when one of these methods is called but the result is not used.
- *
- * <p>{@code @CheckReturnValue} may be applied to a class or package to indicate that all methods in
- * that class or package must have their return values checked.
- */
 @Documented
-@Target({METHOD, CONSTRUCTOR, TYPE, PACKAGE})
-@Retention(RUNTIME)
-public @interface CheckReturnValue {}
+@Target({TYPE, PACKAGE})
+@Retention(CLASS)
+public @interface DefaultNullnessUnknown {}
