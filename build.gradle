@@ -1,11 +1,12 @@
 plugins {
     id 'java'
-    id 'jacoco'
+    id 'maven-publish'
     id 'com.diffplug.gradle.spotless' version '3.24.0'
     id 'net.ltgt.errorprone' version '0.8.1'
 }
 
 apply from: "$rootDir/gradle/spotless.gradle"
+apply from: "$rootDir/gradle/publish.gradle"
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
