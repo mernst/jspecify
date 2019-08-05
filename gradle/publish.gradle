@@ -8,6 +8,7 @@ publishing {
                 name = 'Code Analysis Annotations'
                 description = 'An artifact of well-named and well-specified annotations to power static analysis checks'
                 url = 'https://codeanalysis.info/'
+                from components.java
                 licenses {
                     license {
                         name = 'The Apache License, Version 2.0'
